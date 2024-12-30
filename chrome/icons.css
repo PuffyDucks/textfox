@@ -348,6 +348,7 @@
 }
 #appMenu-quit-button2 {
   list-style-image: url("./icons/quit.svg");
+  fill: white;
 }
 
 #PanelUI-fxa-menu-syncnow-button {

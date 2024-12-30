@@ -9,8 +9,9 @@
 #translations-button-icon,
 #tracking-protection-icon-container,
 #star-button-box,
-.urlbar-page-action {
-  display: none;
+.urlbar-page-action,
+hbox.titlebar-spacer {
+  display: none !important;
 }
 
 /* configurable navigation buttons */
@@ -61,7 +62,7 @@
   transition: border-color var(--tf-border-transition) !important;
   &:hover,
   &:focus {
-    border-color: var(--tf-accent) !important;
+    border-color: var(--tf-border-hovered) !important;
   }
   &::before {
     content: "navbar";
@@ -79,6 +80,7 @@
     overflow: unset !important;
   }
 }
+
 #PersonalToolbar {
   margin: 8px 8px 2px;
   padding: 4px !important;
@@ -90,7 +92,7 @@
   transition: border-color var(--tf-border-transition) !important;
   &:hover,
   &:focus {
-    border-color: var(--tf-accent) !important;
+    border-color: var(--tf-border-hovered) !important;
   }
   &::before {
     content: "bookmarks";
@@ -107,11 +109,14 @@
 
 #PlacesToolbarItems {
   display: flex;
-  justify-content: center;
 }
 
 toolbarbutton.bookmark-item:not(.subviewbutton) {
   padding: 8px !important;
+}
+
+#toolbar-menubar {
+  display: none !important;
 }
 
 :root[tabsintitlebar] #toolbar-menubar[autohide="true"] {

@@ -1,5 +1,7 @@
 @-moz-document url-prefix(about:) {
   * {
     font-family: var(--tf-font-family) !important;
+    --in-content-page-background: var(--lwt-accent-color) !important;
+    --background-color-box: #1e2030 !important;
   }
 }
